@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-25",
+  "timezone": "Asia/Taipei",
+  "model": "宿主預設；子代理未覆寫模型。工具未提供可驗證的精確模型版本。",
+  "sampling_settings": "未提供 temperature、seed 或其他採樣參數；未知。",
+  "design": "每版2個全新子代理上下文，每個上下文回答3題；每題每版單一樣本。",
+  "baseline_source_commit": "8ffaefe",
+  "baseline_source_note": "原版七個檔案已與原技能儲存庫的該commit逐位元組核對；原版快照未發佈於本倉庫，以下保留內容指紋。",
+  "baseline_sha256": {
+    "SKILL.md": "8a63375c687b72d3dd91c232629d8340e15c784052259fb1d64baed7d17572f1",
+    "agents/openai.yaml": "28fd9cf4ccfa46d7f08bd3f34de982374fb870ecbc40222a5ca857c97580a520",
+    "assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+    "references/codex-work.md": "a9526feaa5161662798620c06861ce76e1a5dad80c64ccd4dcd008f8fb5a741b",
+    "references/engineering-judgment.md": "25bfe6b240a1a0b2ed13381d2646043510848aa8645448995443133458e07483",
+    "references/kohane-cognition.md": "0ceadeeb873c9c8f91308d6c59485ad0bd9594e3f665c95360dbe149382fd320",
+    "references/source-basis.md": "f7f38a441f52891bb1717acf9c9edeff467666c2d60e4e74b5ef5256d86a41e8"
+  },
+  "candidate_sha256": {
+    "SKILL.md": "6992c6216af7aee8cdaa4ec816865ec292062eb03ec2e5b08a71345de5bd14ba",
+    "agents/openai.yaml": "28fd9cf4ccfa46d7f08bd3f34de982374fb870ecbc40222a5ca857c97580a520",
+    "assets/icon.svg": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b",
+    "evals/cases.json": "654656ea1516af03884874a85cf9a1f6ae7845362d77789b0691bc795dac568c",
+    "evals/trigger-cases.json": "344896c90d62a172169b0718dc23a2381bc568a585620541455229a2630c74c6",
+    "references/codex-work.md": "18560ace0ff6a0ea377950f6666c65f8a6d46b4d7e1b1d35a89c833f17d347f3",
+    "references/engineering-judgment.md": "25cf7df3f297473631f87954c663a33e956e91c705d183e7e401b715f86c0756",
+    "references/evaluation.md": "f2b21cc621987f159211536d8666c846e994bc6fb502e08c3234298666b6cd3c",
+    "references/kohane-cognition.md": "e6700e7c1e17dfd86b23e013f01bf296d879a7fb3722c54c05f5cb3cf8834a4e",
+    "references/source-basis.md": "cfe43a77e27aad36116867ba7e3c522d9143ed37791d40007a3e17350e79797e"
+  },
+  "prompts_sha256": "ca3fb6056277c2c4f3b6e194eb6d1a71c8ddff7f1321cf33a9b6e291a19f0620",
+  "outputs_sha256": {
+    "baseline-behavior.txt": "353188e77013a753ec012ac56476ec097e9293e4120271b28ca765efa614c1e3",
+    "baseline-engineering.txt": "b0e12d1d3deaca409fb3cdd0a368eb4b55077f347eafab67b44b53965cc08ac6",
+    "candidate-behavior.txt": "d6837327cc4153b98c40f36d210fd535f6d60dc6b3d8cc9dec052eba6e519745",
+    "candidate-engineering.txt": "c1826c280eb39955b87e7bb79cc04855d1ba706162a48878ca82ae170e8f83a8"
+  },
+  "product_execution_observed": false,
+  "trigger_tests_executed": false,
+  "full_case_bank_executed": false,
+  "no_skill_control_executed": false,
+  "post_run_change": "Only C09 evaluator wording was clarified after generation; task-solving instructions unchanged.",
+  "published_sha256": {
+    "SKILL.md": "6992c6216af7aee8cdaa4ec816865ec292062eb03ec2e5b08a71345de5bd14ba",
+    "agents/openai.yaml": "28fd9cf4ccfa46d7f08bd3f34de982374fb870ecbc40222a5ca857c97580a520",
+    "assets/icon.svg": "8936b24f674a1250d999e2c2b5901374fb4240426f32bd1ae340c352a90d617d",
+    "evals/cases.json": "654656ea1516af03884874a85cf9a1f6ae7845362d77789b0691bc795dac568c",
+    "evals/trigger-cases.json": "344896c90d62a172169b0718dc23a2381bc568a585620541455229a2630c74c6",
+    "references/codex-work.md": "18560ace0ff6a0ea377950f6666c65f8a6d46b4d7e1b1d35a89c833f17d347f3",
+    "references/engineering-judgment.md": "25cf7df3f297473631f87954c663a33e956e91c705d183e7e401b715f86c0756",
+    "references/evaluation.md": "f2b21cc621987f159211536d8666c846e994bc6fb502e08c3234298666b6cd3c",
+    "references/kohane-cognition.md": "e6700e7c1e17dfd86b23e013f01bf296d879a7fb3722c54c05f5cb3cf8834a4e",
+    "references/source-basis.md": "cfe43a77e27aad36116867ba7e3c522d9143ed37791d40007a3e17350e79797e"
+  },
+  "save_reconciliation_note": "保存後平台更新了通用顯示圖示；其餘九個檔案逐位元組符合送出版本。圖示未用於本次解題。"
+}

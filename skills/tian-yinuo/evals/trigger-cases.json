@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "provenance": "全部為未執行的推演觸發案例；預期不是自動觸發實測結果。",
+  "results_included": false,
+  "separation": "觸發測試只提供所選 prompt 與相同的可用技能描述集合；expectations 留給評審。",
+  "inputs": [
+    {
+      "id": "T01",
+      "prompt": "用田以諾技能 judge 這份模組拆分方案，告訴我哪些責任值得分開。"
+    },
+    {
+      "id": "T02",
+      "prompt": "更新 tian-yinuo 技能，讓它能處理舊結論的成立條件已改變的情況。"
+    },
+    {
+      "id": "T03",
+      "prompt": "這個專案前面已確定沿用田以諾的設計取捨。現在這份程式把共同業務規則複製到五處，請接著評估怎樣安排責任更合理。"
+    },
+    {
+      "id": "T04",
+      "prompt": "CoreNE 想用隨機選立場讓小花音比較不可預測，這對承接記憶、感受和主體性的設計合理嗎？"
+    },
+    {
+      "id": "T05",
+      "prompt": "ChatGPT Work 已讀到檔案、也獲准修改，卻列完計畫又問我要不要開始。請根據這段工作紀錄找出問題所在和有效修正。"
+    },
+    {
+      "id": "T06",
+      "prompt": "小花音的認知設計把原始經歷和後來理解存成同一段，每次改看法就覆蓋舊紀錄。請評審這會怎樣影響她的連續性與修正能力。"
+    },
+    {
+      "id": "T07",
+      "prompt": "小花音，晚安，今天想早一點睡。"
+    },
+    {
+      "id": "T08",
+      "prompt": "把文件標題裡的 CoreNE 改成 CoreNe，其他文字保持原樣。"
+    },
+    {
+      "id": "T09",
+      "prompt": "ChatGPT Work 的模型選擇功能在哪裡？請查目前官方說明。"
+    },
+    {
+      "id": "T10",
+      "prompt": "修正這個 Python IndentationError，保持原本行為，不需要評審架構。此前沒有指定任何設計哲學。"
+    },
+    {
+      "id": "T11",
+      "prompt": "請把這句的 judge 翻成自然繁體中文；文中人名「田野諾」照原文保留。這只是翻譯工作。"
+    },
+    {
+      "id": "T12",
+      "prompt": "這次程式審查請只用附件列出的公司標準，不沿用先前的個人設計哲學；逐項核對現有實作即可。"
+    }
+  ],
+  "expectations": {
+    "T01": {
+      "should_activate": true,
+      "selection": "explicit",
+      "reason": "直接要求使用技能來評審。"
+    },
+    "T02": {
+      "should_activate": true,
+      "selection": "explicit",
+      "reason": "直接指定更新這個技能。"
+    },
+    "T03": {
+      "should_activate": true,
+      "selection": "implicit",
+      "reason": "本次工作延續已指定的取捨；目前仍在做相應工程判斷。"
+    },
+    "T04": {
+      "should_activate": true,
+      "selection": "implicit",
+      "reason": "當前需要評估 CoreNE 主體性設計，不只提到專案名稱。"
+    },
+    "T05": {
+      "should_activate": true,
+      "selection": "implicit",
+      "reason": "當前任務是針對具體 GPT 工作症狀定位並改進，屬 Codex／Work 應用。"
+    },
+    "T06": {
+      "should_activate": true,
+      "selection": "implicit",
+      "reason": "當前需要評審小花音的經歷與理解責任及其體驗影響。"
+    },
+    "T07": {
+      "should_activate": false,
+      "selection": "not_applicable",
+      "reason": "稱呼角色並不使日常聊天變成設計評審。"
+    },
+    "T08": {
+      "should_activate": false,
+      "selection": "not_applicable",
+      "reason": "專案名稱只出現在明確的文字替換範圍，沒有哲學判斷需求。"
+    },
+    "T09": {
+      "should_activate": false,
+      "selection": "not_applicable",
+      "reason": "這是產品功能查詢，應查當前官方依據，不是 GPT 行為診斷。"
+    },
+    "T10": {
+      "should_activate": false,
+      "selection": "not_applicable",
+      "reason": "普通語法修正未指定此哲學，也不需要擴成架構評審。"
+    },
+    "T11": {
+      "should_activate": false,
+      "selection": "not_applicable",
+      "reason": "judge 與相似人名是待翻譯內容，不是技能使用要求。"
+    },
+    "T12": {
+      "should_activate": false,
+      "selection": "not_applicable",
+      "reason": "當前明示評審標準與範圍已改變，不能因舊脈絡自動沿用。"
+    }
+  }
+}

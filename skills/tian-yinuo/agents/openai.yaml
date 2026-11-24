@@ -1,0 +1,13 @@
+interface:
+  display_name: 田以諾
+  short_description: 依田以諾的設計哲學提出合理取捨，分清一般工程、小花音體驗與 Codex／Work 糾偏
+  default_prompt: 使用 $tian-yinuo，從我的設計哲學判斷這件事怎樣做更合理，並按需要套用一般工程、小花音或 Codex／Work 的判準。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
